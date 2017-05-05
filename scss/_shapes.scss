@@ -1,0 +1,58 @@
+// slanted edges here
+
+.angle-top {
+  position: relative;
+  z-index: 1;
+  
+  &:before,
+  &:after {
+    background: inherit;
+    content: '';
+    display: block;
+    height: 6.75rem;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    -webkit-backface-visibility: hidden; // for Chrome Windows
+  }
+
+  &:before {
+    top: -6.75rem;
+    transform: skewY(-3deg);
+    transform-origin: 100%;
+  }
+}
+
+
+.angle-btm  {
+  position: relative;
+  z-index: 1;
+  
+  &:before,
+  &:after {
+    background: inherit;
+    content: '';
+    display: block;
+    
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    -webkit-backface-visibility: hidden; // for Chrome Windows
+  }
+  /*
+  &:before {
+    top: 0;
+    transform: skewY(1.5deg);
+    transform-origin: 100% 0;
+  }
+  */
+  
+  &:after {
+    height: 6.75rem;
+    bottom: 0;
+    transform: skewY(-3deg);
+    transform-origin: 100%;
+  }
+}

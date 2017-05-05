@@ -1,0 +1,30 @@
+.btn-flat-shadow {
+	border-bottom-width: 3px;
+	border-bottom-color: darken($green, 10%);
+	font-weight: 300;
+	&:hover{
+		border-bottom-color: darken($green, 20%);
+	}
+}
+
+.btn-lg{
+	font-size: 1rem;
+}
+
+.bt-light{
+	border-top: solid 1px $gray-lighter;
+}
+
+.btn-inverse{
+	background-color: $midnight-blue;
+	color: $white;
+}
+
+.btn-square {
+	border-radius: 0;
+	line-height: 1.875rem;
+	padding: 0.875rem;
+	i{
+		width: 1.875rem;
+	}
+}

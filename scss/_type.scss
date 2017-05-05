@@ -1,0 +1,67 @@
+.font-size-lg {
+	font-size: 1.5rem; 
+}
+
+.font-size-xl {
+	font-size: 1.875rem; 
+	line-height: 3rem;
+}
+
+.heading-sm{
+	font-size: 1.125rem;
+	line-height: 1.5rem;
+}
+
+.font-weight-thin {
+	font-weight: 100;
+}
+
+.section-header h2,
+.contact-title{
+	font-size: 1.125rem;
+	line-height: 1.5rem;
+	color: #6a6a6a;
+	text-transform: uppercase;
+	font-weight: 300;
+}
+
+.title-line{
+    position: relative;
+    overflow: hidden;
+    
+    span {
+        display: inline-block;
+        vertical-align: baseline;
+        zoom: 1;
+        *display: inline;
+        *vertical-align: auto;
+        position: relative;
+        padding: 0 20px;
+
+        &:before, &:after {
+            content: '';
+            display: block;
+            width: 1000px;
+            position: absolute;
+            top: 0.73em;
+            border-top: 1px solid #d7d7d7;
+        }
+
+        &.border-light{
+	        &:before, &:after {
+	            border-top-color: $gray-lighter;
+	        }        	
+        }
+
+        &:before { right: 100%; }
+        &:after { left: 100%; }
+    }
+}
+
+.icon-link {
+	font-size: 1.875rem;
+}
+
+.list-inline-item:not(:last-child) {
+    margin-right: 1rem;
+}

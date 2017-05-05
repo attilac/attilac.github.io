@@ -1,0 +1,11 @@
+.navbar-inverse .navbar-brand, 
+.navbar-inverse .navbar-toggler {
+	color: $white;
+}
+
+.navbar-toggleable-sm .navbar-nav .nav-link {
+	@media (min-width: 768px){
+	    padding-right: .75rem;
+	    padding-left: .75rem;
+	}
+}
