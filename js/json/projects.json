@@ -26,7 +26,7 @@
             "category": "Assignment",
             "thumb": "movie-db-pf.jpg",
             "images": [
-            	""
+            	"movie-db-shw.jpg"
             ],
             "date": "2017-02",
          	"shortDescription": "JavaScript Design Patterns",
@@ -47,7 +47,7 @@
             "category": "Assignment",
             "thumb": "asap-pf.jpg",
             "images": [
-            	""
+            	"asap-shw.jpg"
             ],
             "date": "2017-01",
          	"shortDescription": "Webbsida för fiktiv byrå",
@@ -86,7 +86,7 @@
             "category": "Assignment",
             "thumb": "todo-pf.jpg",
             "images": [
-            	""
+            	"todo-shw.jpg"
             ],
             "date": "2016-11",
          	"shortDescription": "Todo-lista i JavaScript",
@@ -104,7 +104,7 @@
             "category": "Project",
             "thumb": "wickholm-pf.jpg",
             "images": [
-            	""
+            	"wickholm-shw.jpg"
             ],
             "date": "2015-12",
          	"shortDescription": "Portfolio till en designbyrå",
@@ -124,7 +124,7 @@
             "category": "Project",
             "thumb": "mgt-pf.jpg",
             "images": [
-            	""
+            	"sf-montering-shw.jpg"
             ],
             "date": "2015-04",
          	"shortDescription": "Kompositör inriktad på reklamfilm",
@@ -177,7 +177,7 @@
             ],
             "liveUrl": "http://gorankajfes.com/",
             "repoUrl": "",
-            "id": 7
+            "id": 8
         }     
     ]
 }

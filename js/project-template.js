@@ -92,17 +92,45 @@ var projectTemplate = (function() {
 	 * @return 
 	 */   
 	var projectItem = (projectData) => {
-		//console.log(projectData);
+		console.log(projectData);
 		return `
-			<div class="project-detail row fade" data-id="${projectData.id}">
-				<div class="col-sm-10 push-sm-1 col-lg-8 push-lg-2 mb-5">
-			 		<div class="card">
-							${listImage(projectData)}
-							${projectItemHeader(projectData)}			 	  	
-			 	  	</div>				
+	        <div class="showcase bg-white py-4 mb-5" id="showCaseContainer" data-id="${projectData.id}">
+	          <button type="button" class="close" aria-label="Close">
+	          <span aria-hidden="true">x</span>
+	          </button>
+	          <div class="container">
+	            <div class="row">
+	          		<div class="col-7">
+						${projectImage(projectData.images)}		 	  	
+		 	  		</div>	
+		 	  		 <div class="col-5">
+						${projectItemHeader(projectData)}	
+						${techList(projectData.tech)}  		
+		                <div class="control">
+		                	<a class="btn btn-primary btn-flat-shadow text-uppercase btn-lg mr-2" href="${projectData.liveUrl}" data-id="1" data-target="" >Besök Sidan</a>
+		                	<a class="btn btn-outline-secondary btn-circle icon-link" href="${projectData.liveUrl}"><i class="fa fa-github"></i></a>
+		                </div>						 
+		 	  		 </div>			
+				</div>
 			</div>
 		`;
 	};	
+
+	/**
+	 * 
+	 * @param 
+	 * @return 
+	 */ 
+	var projectImage = (images) => {
+		//console.log(images);
+		return `
+	        <div class="project-image embed-responsive embed-responsive-4by3 image-box-shadow">
+	          <div class="project-image-inner text-center embed-responsive-item bg-faded">
+	             <img class="img-fluid" alt="" src="images/${images}"/>
+	            </div>
+	        </div>    
+        `;
+	};
 
 	/**
 	 * Template for project detail header
@@ -111,32 +139,25 @@ var projectTemplate = (function() {
 	 * @param {String} label - property from project object
 	 * @return 
 	 */
-	var projectItemHeader = ({title, year, label}) => {
+	var projectItemHeader = ({title, description}) => {
 		return `
-		<div class="card-block py-5">	
-	  		<h3 class="project-title card-title mb-0">${title}</h3>
-		  		<p class="card-text">
-		  		<small>
-		  			<span class="project-year">${year}</span>
-		  			<span class="label">${label}</span>
-		  		</small>	
-		  		</p>	
-		</div>  	
-		<div class="tracks-container"></div>	
+        	<h3 class="showcase-title text-primary font-weight-thin line-height-md mb-4">${title}</h3>
+        	<div class="showcase-description"><p>${description}</p></div>	 
 		`;      
 	};	
 
 	/**
-	 * Parent template for project tracks
-	 * @param {Object} trackData - object of track data
+	 * Parent template for project 
+	 * @param {Object}
 	 * @return 
 	 */
-	var trackList = (trackData) => {
-		//console.log(trackData);
+	var techList = (tech) => {
+		console.log(tech);
 		return `
-			<ul class="track-list list-group">
-				 ${trackData.map((track, index) => trackListItem({
-				  track, index
+			<h5 class="tech text-primary font-weight-thin line-height-md mb-2">Använda teknologier</h5>
+			 <ul class="tech-list">
+				 ${tech.map((tech) => techListItem({
+				  tech
 				})).join('')}  			
 			</ul>
 		`;
@@ -148,100 +169,17 @@ var projectTemplate = (function() {
 	 * @param {Number} index - track index
 	 * @return 
 	 */
-	var trackListItem = ({ track, index }) => {
-		let duration = track.duration > 0 || '' ? utils.secondsToMinutes(track.duration): '';
+	var techListItem = ({tech}) => {
   		return `
-		 	<li class="track-list-item list-group-item d-flex justify-content-start"> 	
-		 		<div class="track-num">${index+1}</div> 	
-	 			<div class="track-title">${track.name}</div>	
-	 			<div class="duration ml-auto">${duration}</div>		
-			</li>
-		`;
-	};	
-
-	/**
-	 * Parent template for project buy-links. 
-	 * {Object} project - object with project data
-	 * @return 
-	 */
-	var purchaseModalContent = (project) => {
-		//console.log(project);
-		return `
-	      <div class="modal-content">
-	        <div class="modal-header">
-	          <h5 class="modal-title project-title h5">
-				 ${project.title} 
-				<small class="year">${project.label} ${project.year}</small>
-	          </h5>
-	          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-	            <span aria-hidden="true">&times;</span>
-	          </button>
-	        </div>
-	        <div class="modal-body">
-				<div class="purchase-container">
-					<div class="row">
-						<div class="col-8 push-2 pb-3">
-						${listImage(project)}
-						</div>	
-					</div>	
-				 	${purchaseList(project.purchase)}
-				</div>        
-	        </div>
-	      </div>		
+          <li class="tech-list-item">${tech}</li>
 		`;
 	};			
-
-	/**
-	 * Template for list of project buy-links
-	 * {Object} purchase - array of objects with buy-links
-	 * @return 
-	 */
-	var purchaseList = (purchase) => {
-		return `
-			<ul class="purchase-list list-group">
-				 ${purchase.map((item) => purchaseItem({
-				  item
-				})).join('')}  			
-			</ul>
-		`;
-	};
-
-	/**
-	 * Template for list-items of project buy-links
-	 * @param {Object} item - object with buy-link
-	 * @return 
-	 */
-	var purchaseItem = ({item}) => {
-  		return `
-		 	<a class="purchase-list-item list-group-item" href="${item.url}" target="_blank">
-		 		<i class="fa fa-cloud-download mr-3"></i> 
-		 		${item.name}
-		 	</a>
-		`;
-	};	
-
-	/**
-	 * Parent template for project buy-links. 
-	 * {Object} project - object with project data
-	 * @return 
-	 */
-	var purchaseLinks = (project) => {
-		//console.log(project);
-		return `
-			<div id="purchaseLinks" class="purchase-container">
-			 	${purchaseList(project.purchase)}
-			</div>        	
-		`;
-	};		
 
 	// Reveal public pointers to
     // private functions and properties
     return {
         list: list,
         projectItem: projectItem,
-        trackList: trackList,
-        purchaseList: purchaseList,
-        purchaseModalContent: purchaseModalContent,
-        purchaseLinks: purchaseLinks	
+        techList: techList,
     };	
 })();	

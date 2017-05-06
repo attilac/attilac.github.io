@@ -51,17 +51,13 @@ var projectView = (function() {
 	 */ 
 	var handleProjectItemLoaded = function(response){	
 		//console.log(projectApi.getCurrentProject());
-		console.log(response.projects[projectApi.getCurrentProject()]);
+		console.log(response.projects[projectApi.getCurrentProject()]);	
+		
+		document.getElementById('showcase').innerHTML = '';
+		document.getElementById('showcase').innerHTML = projectTemplate.projectItem(response.projects[projectApi.getCurrentProject()]);	
+
 		$('#showcase').collapse('show');
-		zenscroll.to(document.querySelector('#showcase'), 500);			
-		/*
-		document.getElementById('albumContainer').innerHTML = '';
-		document.getElementById('albumContainer').innerHTML = albumTemplate.albumItem(response);	
-		albumView.handlePurchaseLinksLoaded(response);	
-		albumApi.getAlbumTracks(response.title);
-		_scrollToAlbum();
-		view.delayFadeInContent('.album-detail');
-		*/
+		zenscroll.to(document.querySelector('#showcase'), 500);				
 	};	
 
 
