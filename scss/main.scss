@@ -5,9 +5,11 @@
 @import 'navbar';
 @import 'buttons';
 @import 'shapes';
+@import 'projects';
 
 .bg-midnight-blue{
 	background-color: $midnight-blue;
+	color: $white;
 }
 .bg-white {
 	background-color: $white;
@@ -23,6 +25,10 @@
 
 .card-box-shadow{
 	box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+}
+
+.image-box-shadow{
+	box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.4);
 }
 
 .card-footer {
@@ -51,7 +57,7 @@
 	    -webkit-border-radius: 60px;
 	    border-radius: 60px;
 	    border: solid 1px #d7d7d7;
-	    z-index: 0
+	    z-index: 0	
 	}
 	&:after {
 		content: '';

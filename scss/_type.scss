@@ -12,6 +12,10 @@
 	line-height: 1.5rem;
 }
 
+.font-weight-md {
+	font-weight: 300;
+}
+
 .font-weight-thin {
 	font-weight: 100;
 }
@@ -36,7 +40,7 @@
         *display: inline;
         *vertical-align: auto;
         position: relative;
-        padding: 0 20px;
+        padding: 0 1.5rem;
 
         &:before, &:after {
             content: '';
@@ -44,7 +48,7 @@
             width: 1000px;
             position: absolute;
             top: 0.73em;
-            border-top: 1px solid #d7d7d7;
+            border-top: 1px solid rgba(215, 215, 215, 1);
         }
 
         &.border-light{
@@ -53,9 +57,36 @@
 	        }        	
         }
 
+        &.border-rgba{
+	        &:before, &:after {
+	            border-top-color: rgba(255, 255, 255, 0.1);
+	        }        	
+        }
+		
+		&.border-inset{
+			&:before, &:after {
+				border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+			    border-top: solid 3px rgba(0, 0, 0, 0.15);
+			}	
+		}        
+
         &:before { right: 100%; }
         &:after { left: 100%; }
     }
+
+    &.align-left{
+    	span{
+    		padding-left: 0;
+    	}
+    }
+}
+
+.border-rgba{
+    border-top-color: rgba(255, 255, 255, 0.1);       	
+}
+
+.inset{
+	text-shadow:-1px -1px 0px rgba(0, 0, 0, 0.3);
 }
 
 .icon-link {
