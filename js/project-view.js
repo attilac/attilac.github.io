@@ -20,8 +20,6 @@ var projectView = (function() {
 		.forEach(function(link){
 			link.addEventListener('click', projectItemOnClick, false);
 		});
-
-		document.getElementsByClassName('close')[0].addEventListener('click', projectCloseOnClick, false);
 	};
 
 	/**
@@ -42,7 +40,7 @@ var projectView = (function() {
 	 */
 	var projectCloseOnClick = function(e){
 		e.preventDefault();
-		$('#showcase').collapse('toggle');			
+		$('#showcaseCollapse').collapse('toggle');			
 	};
 
 	/**
@@ -51,13 +49,18 @@ var projectView = (function() {
 	 */ 
 	var handleProjectItemLoaded = function(response){	
 		//console.log(projectApi.getCurrentProject());
-		console.log(response.projects[projectApi.getCurrentProject()]);	
+		//console.log(response.projects[projectApi.getCurrentProject()]);
+		if(document.getElementsByClassName('close')[0]){
+			document.getElementsByClassName('close')[0].removeEventListener('click', projectCloseOnClick);
+		}
 		
 		document.getElementById('showcase').innerHTML = '';
 		document.getElementById('showcase').innerHTML = projectTemplate.projectItem(response.projects[projectApi.getCurrentProject()]);	
+		document.getElementsByClassName('close')[0].addEventListener('click', projectCloseOnClick, false);
 
-		$('#showcase').collapse('show');
-		zenscroll.to(document.querySelector('#showcase'), 500);				
+		$('#showcaseCollapse').collapse('show');
+		zenscroll.to(document.querySelector('#showcaseCollapse'), 500);		
+		view.delayFadeInContent('.showcase .container');		
 	};	
 
 

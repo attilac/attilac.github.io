@@ -15,7 +15,6 @@ var view = (function() {
 	 */ 
 	var init = function(){
 		_addPageLinkHandlers();
-		projectApi.getProjectList();
 		zenscroll.setup(null, 12);
 		//delayFadeInContent('#home');
 	};
@@ -161,4 +160,4 @@ var view = (function() {
     };	
 })();
 
-
+projectApi.getProjectList();

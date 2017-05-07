@@ -15,7 +15,7 @@ var ajaxFetch = (function() {
 	 * @param {function} callback - the callback function
 	 */
 	var getDataFromApi = function(dataUrl = '', queryStrings = '', callback = ''){
-		//view.showLoadingSpinner();
+		view.showLoadingSpinner();
 		fetch(dataUrl + queryStrings)
 		  .then(status)
 		  .then(parseJSON)
@@ -24,13 +24,13 @@ var ajaxFetch = (function() {
 		  	console.log(result);
 		    if(callback){
 				callback(result);
-				//view.hideLoadingSpinner();
+				view.hideLoadingSpinner();
 		    }
 		  })
 		  .catch(function(error) {
 		    getErrorMessage(error);
-			//view.showErrorAlert(error);			    
-		    //view.hideLoadingSpinner();
+			view.showErrorAlert(error);			    
+		    view.hideLoadingSpinner();
 		  });	
 	};
 

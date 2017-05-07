@@ -40,9 +40,9 @@ var projectTemplate = (function() {
 	 */
 	var listItem = ({ projectItem, thumb, shortDescription}) => {
   		return `
-		 	<div class="project-list-item col-sm-6 col-lg-4 mb-4" data-id="${projectItem.id}" data-title="${projectItem.title}"> 
-		 		<a class="project-detail-link" href="#showcase" aria-expanded="false" aria-controls="showcase" title="${projectItem.title}">
-			 		<div class="card card-box-shadow">
+		 	<div class="project-list-item col-sm-6 col-lg-4 mb-4 d-flex" data-id="${projectItem.id}" data-title="${projectItem.title}"> 
+		 		<a class="project-detail-link d-flex w-100" href="#showcase" aria-expanded="false" aria-controls="showcase" title="${projectItem.title}">
+			 		<div class="card card-box-shadow w-100">
 							${thumb}
 							${shortDescription}			 	  	
 			 	  	</div>
@@ -98,7 +98,7 @@ var projectTemplate = (function() {
 	          <button type="button" class="close" aria-label="Close">
 	          <span aria-hidden="true">x</span>
 	          </button>
-	          <div class="container">
+	          <div class="container fade">
 	            <div class="row">
 	          		<div class="col-7">
 						${projectImage(projectData.images)}		 	  	
