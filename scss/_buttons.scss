@@ -39,10 +39,11 @@
 }
 
 button.close{
+	transition: all 0.35s ease;
 	display: block;
-	border-top: solid 0.875rem $midnight-blue;
+	border-top: solid 0.875rem lighten($midnight-blue, 10%);
     padding: 0.5rem 0.875rem;
-    color: $white;
+    color: darken($white, 40%);
     background: #d1d1d1;
     font-weight: 100;
     font-size: 2rem;
@@ -52,5 +53,12 @@ button.close{
     top: -15px;
     opacity: 1;
     text-shadow: none;
-    z-index: 20;
+    z-index: 20;    
+	&:focus, 
+	&:hover {
+		outline: 0;
+	 	color: darken($white, 80%);
+		opacity: 0.8;	
+		border-top-color: $midnight-blue;
+	}    
 }

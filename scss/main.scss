@@ -2,18 +2,12 @@
 @import 'variables';
 @import '../../node_modules/bootstrap/scss/bootstrap';
 @import 'type';
+@import 'colors';
 @import 'navbar';
 @import 'buttons';
 @import 'shapes';
 @import 'projects';
-
-.bg-midnight-blue{
-	background-color: $midnight-blue;
-	color: $white;
-}
-.bg-white {
-	background-color: $white;
-}
+@import 'skills';
 
 .jumbotron {
 	height: 91vh;
@@ -105,5 +99,9 @@
 
 .p-relative{
 	position: relative;
+}
+
+.p-absolute{
+	position: absolute;
 }
 
