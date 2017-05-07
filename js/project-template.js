@@ -105,11 +105,8 @@ var projectTemplate = (function() {
 		 	  		</div>	
 		 	  		 <div class="col-5">
 						${projectItemHeader(projectData)}	
-						${techList(projectData.tech)}  		
-		                <div class="control">
-		                	<a class="btn btn-primary btn-flat-shadow text-uppercase btn-lg mr-2" href="${projectData.liveUrl}" data-id="1" data-target="" >Besök Sidan</a>
-		                	<a class="btn btn-outline-secondary btn-circle icon-link" href="${projectData.liveUrl}"><i class="fa fa-github"></i></a>
-		                </div>						 
+						${techList(projectData.tech)}
+						${projectLinks(projectData)}  							 
 		 	  		 </div>			
 				</div>
 			</div>
@@ -123,11 +120,12 @@ var projectTemplate = (function() {
 	 */ 
 	var projectImage = (images) => {
 		//console.log(images);
+		image = images !== '' ? `<img class="img-fluid" alt="" src="images/${images}"/>` : '';
 		return `
 	        <div class="project-image embed-responsive embed-responsive-4by3 image-box-shadow">
-	          <div class="project-image-inner text-center embed-responsive-item bg-faded">
-	             <img class="img-fluid" alt="" src="images/${images}"/>
-	            </div>
+          		<div class="project-image-inner text-center embed-responsive-item bg-faded">
+	             	${image}
+            	</div>
 	        </div>    
         `;
 	};
@@ -172,6 +170,23 @@ var projectTemplate = (function() {
 	var techListItem = ({tech}) => {
   		return `
           <li class="tech-list-item">${tech}</li>
+		`;
+	};	
+
+	/**
+	 * Template 
+	 * @param {} 
+	 * @param {}
+	 * @return 
+	 */
+	var projectLinks = ({liveUrl, repoUrl}) => {
+		liveLink = liveUrl !== '' ? `<a class="btn btn-primary btn-flat-shadow text-uppercase btn-lg mr-2" href="${liveUrl}" data-id="1" data-target="" >Besök Sidan</a>` : '';
+		repoLink = repoUrl !== '' ? `<a class="btn btn-outline-secondary btn-circle icon-link" href="${repoUrl}"><i class="fa fa-github"></i></a>`: '';
+		return `
+            <div class="control">
+            	${liveLink}
+            	${repoLink}
+            </div>	
 		`;
 	};			
 
