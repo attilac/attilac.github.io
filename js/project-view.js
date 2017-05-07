@@ -49,8 +49,7 @@ var projectView = (function() {
 	 */ 
 	var handleProjectItemLoaded = function(response){	
 		//console.log(projectApi.getCurrentProject());
-		//console.log(response.projects[projectApi.getCurrentProject()]);
-		if(document.getElementsByClassName('close')[0]){
+		if(document.getElementsByClassName('close')[0] !== undefined){
 			document.getElementsByClassName('close')[0].removeEventListener('click', projectCloseOnClick);
 		}
 		
@@ -59,9 +58,12 @@ var projectView = (function() {
 		document.getElementsByClassName('close')[0].addEventListener('click', projectCloseOnClick, false);
 
 		$('#showcaseCollapse').collapse('show');
-		zenscroll.to(document.querySelector('#showcaseCollapse'), 500);		
-		view.delayFadeInContent('.showcase .container');		
+		zenscroll.to(document.querySelector('#showcaseCollapse'), 500, fadeInShowcase);			
 	};	
+
+	var fadeInShowcase = function(){
+		view.fadeInContent('.showcase .container');	
+	};
 
 
     // Reveal public pointers to

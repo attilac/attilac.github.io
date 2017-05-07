@@ -156,7 +156,8 @@ var view = (function() {
 		alertBox: alertBox,
 		showLoadingSpinner: showLoadingSpinner,
 		hideLoadingSpinner: hideLoadingSpinner,
-		delayFadeInContent: delayFadeInContent
+		delayFadeInContent: delayFadeInContent,
+		fadeInContent: fadeInContent
     };	
 })();
 
