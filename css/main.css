@@ -6621,6 +6621,30 @@ button.close {
     position: absolute;
     top: -0.875rem; }
 
+.skills-wrapper {
+  background: url(../images/lines.png) no-repeat;
+  background-position: 90px 30px; }
+
+.skill-column {
+  left: 5%; }
+
+.skills-circle {
+  padding-top: 4.75rem; }
+
+.skills-left-inner {
+  left: 2.1rem;
+  top: 0.2rem; }
+  .skills-left-inner .purple-box {
+    margin-bottom: 3.75rem; }
+  .skills-left-inner .pink-box {
+    margin-bottom: 4.3rem; }
+
+.skills-right-inner {
+  right: -4.75rem;
+  top: -0.2rem; }
+  .skills-right-inner .green-box {
+    margin-bottom: 10rem; }
+
 .skills-list ul {
   padding: 0;
   margin: 0;
@@ -6633,9 +6657,6 @@ button.close {
   text-align: center;
   line-height: 1;
   margin-bottom: 0.3rem; }
-
-.mt-4-neg {
-  margin-top: -1.5rem; }
 
 .jumbotron {
   height: 91vh; }
