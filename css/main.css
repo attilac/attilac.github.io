@@ -6511,6 +6511,12 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
     padding-right: .75rem;
     padding-left: .75rem; } }
 
+@media (max-width: 767px) {
+  .navbar-toggleable-sm .container {
+    position: initial;
+    margin-left: 0;
+    margin-right: 0; } }
+
 .btn-flat-shadow {
   border-bottom-width: 3px;
   border-bottom-color: #378d7d;
@@ -6621,27 +6627,40 @@ button.close {
     position: absolute;
     top: -0.875rem; }
 
-.skills-wrapper {
-  background: url(../images/lines.png) no-repeat;
-  background-position: 90px 30px; }
+@media (min-width: 992px) {
+  .skills-wrapper {
+    background: url(../images/lines.png) no-repeat;
+    background-position: 90px 30px; } }
 
-.skill-column {
-  left: 5%; }
+@media (min-width: 992px) {
+  .skill-column {
+    left: 5%; } }
 
 .skills-circle {
   padding-top: 4.75rem; }
 
 .skills-left-inner {
-  left: 2.1rem;
   top: 0.2rem; }
+  @media (min-width: 768px) {
+    .skills-left-inner {
+      position: absolute; } }
+  @media (min-width: 992px) {
+    .skills-left-inner {
+      left: 2.1rem; } }
   .skills-left-inner .purple-box {
     margin-bottom: 3.75rem; }
   .skills-left-inner .pink-box {
     margin-bottom: 4.3rem; }
 
 .skills-right-inner {
-  right: -4.75rem;
   top: -0.2rem; }
+  @media (min-width: 576px) {
+    .skills-right-inner {
+      position: absolute;
+      right: 0; } }
+  @media (min-width: 992px) {
+    .skills-right-inner {
+      right: -4.75rem; } }
   .skills-right-inner .green-box {
     margin-bottom: 10rem; }
 

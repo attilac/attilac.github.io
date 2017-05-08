@@ -1,12 +1,14 @@
 .skills-wrapper{
-    background: url(../images/lines.png) no-repeat;
-    background-position: 90px 30px;
-    //background-position:50% 50%;
-    //background-size:cover;
+	@media (min-width: 992px) {
+    	background: url(../images/lines.png) no-repeat;
+    	background-position: 90px 30px;
+    }
 }
 
 .skill-column{
-	left: 5%;
+	@media (min-width: 992px) {
+		left: 5%;
+	}
 }
 
 .skills-circle{
@@ -14,7 +16,12 @@
 }
 
 .skills-left-inner {  
-	left: 2.1rem; 
+	@media (min-width: 768px) {
+		position: absolute;
+	}
+	@media (min-width: 992px) {
+		left: 2.1rem; 
+	}
 	top: 0.2rem;
 
 	.purple-box{
@@ -27,7 +34,13 @@
 }
 
 .skills-right-inner {
-    right: -4.75rem;
+	@media (min-width: 576px) {
+		position: absolute;
+		right: 0;
+	}	
+	@media (min-width: 992px) {
+    	right: -4.75rem;
+    }
     top: -0.2rem;
 
 	.green-box{

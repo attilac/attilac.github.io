@@ -9,3 +9,10 @@
 	    padding-left: .75rem;
 	}
 }
+.navbar-toggleable-sm .container{
+	@media (max-width: 767px){
+		position: initial;
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
