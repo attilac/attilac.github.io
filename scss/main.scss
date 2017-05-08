@@ -10,7 +10,9 @@
 @import 'skills';
 
 .jumbotron {
-	height: 91vh;
+	@media (min-width: 768px) {
+		height: 91vh;
+	}
 }
 
 .bb-light{

@@ -6677,8 +6677,9 @@ button.close {
   line-height: 1;
   margin-bottom: 0.3rem; }
 
-.jumbotron {
-  height: 91vh; }
+@media (min-width: 768px) {
+  .jumbotron {
+    height: 91vh; } }
 
 .bb-light {
   border-bottom: solid 1px #e8e8e8; }
