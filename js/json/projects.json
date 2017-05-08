@@ -9,10 +9,10 @@
             ],
             "date": "2017-03",
          	"shortDescription": "Ajax med öppna API-er",
-            "description": "En övning i  att hämta data från öppna API-er genom AJAX. Appen hämtar data från last.fm och youtube. Del av svenska jazzbandets Oddjobs hemsida.",
+            "description": "En uppgift som gick ut på att hämta data från öppna API-er genom AJAX. Appen hämtar data från last.fm och youtube. Del av svenska jazzbandets Oddjobs hemsida.",
             "tech": [ 
             	"JavaScript",
-            	"Responsiv",
+            	"Responsivisitet",
             	"Sass",
             	"Restful APIs",
             	"Gulp"
@@ -30,10 +30,10 @@
             ],
             "date": "2017-02",
          	"shortDescription": "JavaScript Design Patterns",
-            "description": "",
+            "description": "En uppgift vars syfte var att bygga en filmdatabas i JavaScript och använda designmönster. Datan hämtas från en JSON-fil med data från IMDb.",
             "tech": [ 
             	"JavaScript",
-            	"Responsiv",
+            	"Responsivisitet",
             	"Sass",
             	"Gulp",
             	"Fetch"
@@ -51,13 +51,14 @@
             ],
             "date": "2017-01",
          	"shortDescription": "Webbsida för fiktiv byrå",
-            "description": "",
+            "description": "Ett grupparbete i HTML och CSS. Uppdraget var att göra en responsiv sida dels med egen CSS, dels med Bootstrap. Vi bestämde oss för att göra en portfoliosida till en fiktiv webbyrå. Världens snabbaste. Med <a href=\"https://github.com/DanteUh\">DanteUh</a>, <a href=\"https://github.com/jesperengstrom\">jesperengstrom</a> och <a href=\"https://github.com/Loosergirl\">Loosergirl</a>.",
             "tech": [ 
-            	"JavaScript",
-            	"Responsiv",
-            	"Sass",
-            	"Gulp",
-            	"Fetch"
+                "HTML5",
+                "Sass",
+            	"Responsivisitet",
+                "JavaScript",
+                "Git",	
+            	"Gulp"
             ],
             "liveUrl": "https://danteuh.github.io/asap-development-framework/",
             "repoUrl": "https://github.com/attilac/asap-development-framework/",
@@ -71,11 +72,12 @@
             	"sf-montering-shw.jpg"
             ],
             "date": "2016-12",
-         	"shortDescription": "Behance av SFs hemsida",
-            "description": "Behance av SFs hemsida",
+         	"shortDescription": "Redesign concept av SF Bio",
+            "description": "Redesign concept av SFs hemsida. Vi designade olika responsiva moduler i Photoshop som monterades ihop i Behance-stil. Med <a href=\"https://github.com/petersandqvist\">Peter Sandquist</a>",
             "tech": [ 
             	"Photoshop",
-            	"Modular Scales"
+            	"Modular Scales",
+                "Grids"
             ],
             "liveUrl": "http://attilac.se/images/sf-montering-final.jpg",
             "repoUrl": "",
@@ -90,7 +92,7 @@
             ],
             "date": "2016-11",
          	"shortDescription": "Todo-lista i JavaScript",
-            "description": "",
+            "description": "En enkel todo-lista byggd i JavaScript. Uppgiften handlade om att med interaktion från användare lägga till och ta bort HTML till browsern. Todo: Databaskoppling.",
             "tech": [ 
             	"JavaScript",
             	"Sass"
@@ -108,10 +110,10 @@
             ],
             "date": "2015-12",
          	"shortDescription": "Portfolio till en designbyrå",
-            "description": "",
+            "description": "Portfoliosida till Wickholm formavd, en design- och formgivningsbyrå med studio på Varvsgatan vid Hornstull i Stockholm. Ett responsivt tema i WordPress byggdes utifrån deras design.",
             "tech": [ 
             	"Wordpress",
-            	"Responsive",
+            	"Responsivisitet",
             	"Less",
             	"JavaScript"
             ],
@@ -127,11 +129,11 @@
             	"mgt-shw.jpg"
             ],
             "date": "2015-04",
-         	"shortDescription": "Kompositör inriktad på reklamfilm",
-            "description": "",
+         	"shortDescription": "Reklamfilmsmusik galore",
+            "description": "Portfoliosida byggd i WordPress till Mattias Tegnér, en kompositör inriktad främst på musik till reklamfilmer. Designad av Frans Enmark. Hämtar in filmer från Vimeo med AJAX.",
             "tech": [ 
             	"Wordpress",
-            	"Responsive",
+            	"Responsivisitet",
             	"Less",
             	"JavaScript"
             ],
@@ -147,11 +149,11 @@
             	"goran-shw.jpg"
             ],
             "date": "2014-12",
-         	"shortDescription": "Webbsida till trumpetaren Goran Kajfeš",
-            "description": "",
+         	"shortDescription": "Minimalistisk WordPress-sida",
+            "description": "Hemsida till Goran Kajfeš, en svensk jazzmusiker som spelar i band som Oddjob. Minimalsitisk sida med hans album, turnéplan och en blogg. Responsivt eget tema i WordPress.",
             "tech": [ 
             	"Wordpress",
-            	"Responsive",
+            	"Responsivisitet",
             	"Less",
             	"JavaScript"
             ],
@@ -167,11 +169,11 @@
             	"soderberg-shw.jpg"
             ],
             "date": "2014-04",
-         	"shortDescription": "Videosida till klipparen Johan Söderberg",
-            "description": "",
+         	"shortDescription": "Videosida till Johan Söderberg",
+            "description": "Hemsida för att presentera Johan Söderbergs olika verk inom reklam, film och musikvideos. En enkelt responsivt tema i WordPress.",
             "tech": [ 
             	"Wordpress",
-            	"Responsive",
+            	"Responsivisitet",
             	"Less",
             	"JavaScript"
             ],
