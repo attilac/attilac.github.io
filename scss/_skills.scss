@@ -1,3 +1,38 @@
+.skills-wrapper{
+    background: url(../images/lines.png) no-repeat;
+    background-position: 90px 30px;
+}
+
+.skill-column{
+	left: 5%;
+}
+
+.skills-circle{
+	padding-top: 4.75rem;
+}
+
+.skills-left-inner {  
+	left: 2.1rem; 
+	top: 0.2rem;
+
+	.purple-box{
+	    margin-bottom: 3.75rem;
+	}  
+
+	.pink-box{
+	    margin-bottom: 4.3rem;
+	} 	  
+}
+
+.skills-right-inner {
+    right: -4.75rem;
+    top: -0.2rem;
+
+	.green-box{
+	    margin-bottom: 10rem;
+	}    
+}
+
 .skills-list {
 	ul{
 		padding: 0;
@@ -12,8 +47,4 @@
 	text-align: center;
 	line-height: 1;
 	margin-bottom: 0.3rem;
-}
-
-.mt-4-neg{
-	margin-top: -1.5rem;
 }
