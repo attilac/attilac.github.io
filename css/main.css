@@ -366,7 +366,7 @@ table {
 caption {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-  color: #777777;
+  color: #666;
   text-align: left;
   caption-side: bottom; }
 
@@ -1599,7 +1599,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   display: block;
   margin-bottom: 0.5rem; }
   .form-check.disabled .form-check-label {
-    color: #777777;
+    color: #666;
     cursor: not-allowed; }
 
 .form-check-label {
@@ -6265,10 +6265,10 @@ a.bg-inverse:focus, a.bg-inverse:hover {
   color: #fff !important; }
 
 .text-muted {
-  color: #777777 !important; }
+  color: #666 !important; }
 
 a.text-muted:focus, a.text-muted:hover {
-  color: #5e5e5e !important; }
+  color: #4d4d4d !important; }
 
 .text-primary {
   color: #45b29d !important; }
@@ -6502,6 +6502,9 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 .text-green {
   color: #45b29d; }
 
+.text-faded {
+  color: #a7a7a7; }
+
 .navbar-inverse .navbar-brand,
 .navbar-inverse .navbar-toggler {
   color: #fff; }
@@ -6726,6 +6729,10 @@ button.close {
     left: 0;
     background: inherit;
     z-index: 1; }
+
+.footer-content {
+  z-index: 20;
+  top: 1.5rem; }
 
 .hidden {
   display: none; }
