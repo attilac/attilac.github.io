@@ -100,10 +100,10 @@ var projectTemplate = (function() {
 	          </button>
 	          <div class="container fade">
 	            <div class="row">
-	          		<div class="col-7">
+	          		<div class="col-md-7 mb-md-0 mb-3">
 						${projectImage(projectData.images)}		 	  	
 		 	  		</div>	
-		 	  		 <div class="col-5">
+		 	  		 <div class="col-md-5">
 						${projectItemHeader(projectData)}	
 						${techList(projectData.tech)}
 						${projectLinks(projectData)}  							 
