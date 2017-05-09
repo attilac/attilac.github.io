@@ -170,14 +170,14 @@
             ],
             "date": "2014-04",
          	"shortDescription": "Videosida till Johan Söderberg",
-            "description": "Hemsida för att presentera Johan Söderbergs olika verk inom reklam, film och musikvideos. En enkelt responsivt tema i WordPress.",
+            "description": "Hemsida för att presentera Johan Söderbergs mångsidiga verk inom reklam, film och musikvideos. En enkelt responsivt tema i WordPress.",
             "tech": [ 
             	"Wordpress",
             	"Responsivisitet",
             	"Less",
             	"JavaScript"
             ],
-            "liveUrl": "http://gorankajfes.com/",
+            "liveUrl": "http://soderberg.tv/",
             "repoUrl": "",
             "id": 8
         }     
