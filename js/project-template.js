@@ -42,9 +42,10 @@ var projectTemplate = (function() {
   		return `
 		 	<div class="project-list-item col-sm-6 col-lg-4 mb-4 d-flex" data-id="${projectItem.id}" data-title="${projectItem.title}"> 
 		 		<a class="project-detail-link d-flex w-100" href="#showcase" aria-expanded="false" aria-controls="showcase" title="${projectItem.title}">
-			 		<div class="card card-box-shadow w-100">
+			 		<div class="card card-box-shadow w-100 p-relative">
 							${thumb}
-							${shortDescription}			 	  	
+							${shortDescription}		
+							<button class="goto-btn p-absolute btn-outline-primary btn btn-circle"><i class="fa fa-angle-right"></i></button>	 	  	
 			 	  	</div>
 				</a>		 	  	
 			</div>
