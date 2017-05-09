@@ -15,6 +15,13 @@
 	}
 }
 
+.container {
+	@media (max-width: 768px){
+    	width: 100%;
+    	max-width: 100%;
+    }
+}
+
 .bb-light{
 	border-bottom: solid 1px $gray-lighter;
 }

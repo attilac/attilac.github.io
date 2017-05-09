@@ -271,9 +271,9 @@ html {
 body {
   font-family: "Overpass", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 1rem;
-  font-weight: 100;
+  font-weight: 300;
   line-height: 1.5;
-  color: #292b2c;
+  color: #666;
   background-color: #e8e8e8; }
 
 [tabindex="-1"]:focus {
@@ -366,7 +366,7 @@ table {
 caption {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-  color: #666;
+  color: #777;
   text-align: left;
   caption-side: bottom; }
 
@@ -482,7 +482,7 @@ hr {
 small,
 .small {
   font-size: 80%;
-  font-weight: 100; }
+  font-weight: 300; }
 
 mark,
 .mark {
@@ -578,7 +578,7 @@ kbd {
   padding: 0.2rem 0.4rem;
   font-size: 90%;
   color: #fff;
-  background-color: #292b2c;
+  background-color: #333333;
   border-radius: 0.2rem;
   box-shadow: inset 0 -0.1rem 0 rgba(0, 0, 0, 0.25); }
   kbd kbd {
@@ -592,7 +592,7 @@ pre {
   margin-top: 0;
   margin-bottom: 1rem;
   font-size: 90%;
-  color: #292b2c; }
+  color: #333333; }
   pre code {
     padding: 0;
     font-size: inherit;
@@ -1460,7 +1460,7 @@ pre {
 
 .thead-inverse th {
   color: #e8e8e8;
-  background-color: #292b2c; }
+  background-color: #333333; }
 
 .thead-default th {
   color: #464a4c;
@@ -1468,7 +1468,7 @@ pre {
 
 .table-inverse {
   color: #e8e8e8;
-  background-color: #292b2c; }
+  background-color: #333333; }
   .table-inverse th,
   .table-inverse td,
   .table-inverse thead th {
@@ -1599,7 +1599,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   display: block;
   margin-bottom: 0.5rem; }
   .form-check.disabled .form-check-label {
-    color: #666;
+    color: #777;
     cursor: not-allowed; }
 
 .form-check-label {
@@ -1750,7 +1750,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 
 .btn {
   display: inline-block;
-  font-weight: 100;
+  font-weight: 300;
   line-height: 1.25;
   text-align: center;
   white-space: nowrap;
@@ -2031,7 +2031,7 @@ fieldset[disabled] a.btn {
     border-color: #d9534f; }
 
 .btn-link {
-  font-weight: 100;
+  font-weight: 300;
   color: #45b29d;
   border-radius: 0; }
   .btn-link, .btn-link:active, .btn-link.active, .btn-link:disabled {
@@ -2128,7 +2128,7 @@ tbody.collapse.show {
   padding: 0.5rem 0;
   margin: 0.125rem 0 0;
   font-size: 1rem;
-  color: #292b2c;
+  color: #666;
   text-align: left;
   list-style: none;
   background-color: #fff;
@@ -2148,14 +2148,14 @@ tbody.collapse.show {
   width: 100%;
   padding: 3px 1.5rem;
   clear: both;
-  font-weight: 100;
-  color: #292b2c;
+  font-weight: 300;
+  color: #333333;
   text-align: inherit;
   white-space: nowrap;
   background: none;
   border: 0; }
   .dropdown-item:focus, .dropdown-item:hover {
-    color: #1d1e1f;
+    color: #262626;
     text-decoration: none;
     background-color: #f7f7f9; }
   .dropdown-item.active, .dropdown-item:active {
@@ -2366,7 +2366,7 @@ tbody.collapse.show {
   padding: 0.5rem 0.75rem;
   margin-bottom: 0;
   font-size: 1rem;
-  font-weight: 100;
+  font-weight: 300;
   line-height: 1.25;
   color: #464a4c;
   text-align: center;
@@ -3395,13 +3395,13 @@ a.badge:focus, a.badge:hover {
   color: #464a4c;
   text-align: inherit; }
   .list-group-item-action .list-group-item-heading {
-    color: #292b2c; }
+    color: #333333; }
   .list-group-item-action:focus, .list-group-item-action:hover {
     color: #464a4c;
     text-decoration: none;
     background-color: #f7f7f9; }
   .list-group-item-action:active {
-    color: #292b2c;
+    color: #666;
     background-color: #e8e8e8; }
 
 .list-group-item {
@@ -3697,7 +3697,7 @@ button.close {
   display: block;
   font-family: "Overpass", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-style: normal;
-  font-weight: 100;
+  font-weight: 300;
   letter-spacing: normal;
   line-break: auto;
   line-height: 1.5;
@@ -3779,7 +3779,7 @@ button.close {
   padding: 1px;
   font-family: "Overpass", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-style: normal;
-  font-weight: 100;
+  font-weight: 300;
   letter-spacing: normal;
   line-break: auto;
   line-height: 1.5;
@@ -4090,10 +4090,10 @@ a.bg-danger:focus, a.bg-danger:hover {
   background-color: #c9302c !important; }
 
 .bg-inverse {
-  background-color: #292b2c !important; }
+  background-color: #333333 !important; }
 
 a.bg-inverse:focus, a.bg-inverse:hover {
-  background-color: #101112 !important; }
+  background-color: #1a1a1a !important; }
 
 .border-0 {
   border: 0 !important; }
@@ -6253,7 +6253,7 @@ a.bg-inverse:focus, a.bg-inverse:hover {
   text-transform: capitalize !important; }
 
 .font-weight-normal {
-  font-weight: 100; }
+  font-weight: 300; }
 
 .font-weight-bold {
   font-weight: bold; }
@@ -6265,10 +6265,10 @@ a.bg-inverse:focus, a.bg-inverse:hover {
   color: #fff !important; }
 
 .text-muted {
-  color: #666 !important; }
+  color: #777 !important; }
 
 a.text-muted:focus, a.text-muted:hover {
-  color: #4d4d4d !important; }
+  color: #5e5e5e !important; }
 
 .text-primary {
   color: #45b29d !important; }
@@ -6301,10 +6301,10 @@ a.text-danger:focus, a.text-danger:hover {
   color: #c9302c !important; }
 
 .text-gray-dark {
-  color: #292b2c !important; }
+  color: #333333 !important; }
 
 a.text-gray-dark:focus, a.text-gray-dark:hover {
-  color: #101112 !important; }
+  color: #1a1a1a !important; }
 
 .text-hide {
   font: 0/0 a;
@@ -6518,7 +6518,14 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   .navbar-toggleable-sm .container {
     position: initial;
     margin-left: 0;
-    margin-right: 0; } }
+    margin-right: 0;
+    width: 100%; } }
+
+.navbar-toggler {
+  padding: 0;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 0rem; }
 
 .btn-flat-shadow {
   border-bottom-width: 3px;
@@ -6536,6 +6543,10 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 .btn-inverse {
   background-color: #2c3e50;
   color: #fff; }
+
+.btn-muted {
+  background-color: #d1d1d1;
+  color: #333333; }
 
 .btn-square {
   border-radius: 0;
@@ -6630,6 +6641,15 @@ button.close {
     position: absolute;
     top: -0.875rem; }
 
+.project-detail-link .goto-btn {
+  transition: all .35s ease;
+  opacity: 0;
+  right: 1.5rem;
+  bottom: 1.5rem; }
+
+.project-detail-link:hover .goto-btn {
+  opacity: 1; }
+
 @media (min-width: 992px) {
   .skills-wrapper {
     background: url(../images/lines.png) no-repeat;
@@ -6683,6 +6703,11 @@ button.close {
 @media (min-width: 768px) {
   .jumbotron {
     height: 91vh; } }
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    max-width: 100%; } }
 
 .bb-light {
   border-bottom: solid 1px #e8e8e8; }
