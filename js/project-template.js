@@ -45,7 +45,7 @@ var projectTemplate = (function() {
 			 		<div class="card card-box-shadow w-100 p-relative">
 							${thumb}
 							${shortDescription}		
-							<button class="goto-btn p-absolute btn-outline-primary btn btn-circle"><i class="fa fa-angle-right"></i></button>	 	  	
+							<button class="goto-btn p-absolute btn-muted btn-sm btn btn-circle"><i class="fa fa-angle-right"></i></button>	 	  	
 			 	  	</div>
 				</a>		 	  	
 			</div>
@@ -101,7 +101,7 @@ var projectTemplate = (function() {
 	          </button>
 	          <div class="container fade">
 	            <div class="row">
-	          		<div class="col-md-7 mb-md-0 mb-3">
+	          		<div class="col-md-7 mb-md-0 mb-5">
 						${projectImage(projectData.images)}		 	  	
 		 	  		</div>	
 		 	  		 <div class="col-md-5">

@@ -6546,7 +6546,7 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 
 .btn-muted {
   background-color: #d1d1d1;
-  color: #333333; }
+  color: #fff; }
 
 .btn-square {
   border-radius: 0;
@@ -6561,6 +6561,10 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   padding: 0.5rem; }
   .btn-circle i {
     width: 1.875rem; }
+  .btn-circle.btn-sm, .btn-group-sm > .btn-circle.btn {
+    line-height: 1rem; }
+    .btn-circle.btn-sm i, .btn-group-sm > .btn-circle.btn i {
+      width: 1rem; }
 
 button.close {
   transition: all 0.35s ease;
@@ -6644,7 +6648,7 @@ button.close {
 .project-detail-link .goto-btn {
   transition: all .35s ease;
   opacity: 0;
-  right: 1.5rem;
+  right: 0.625rem;
   bottom: 1.5rem; }
 
 .project-detail-link:hover .goto-btn {

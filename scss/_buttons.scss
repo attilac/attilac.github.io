@@ -22,7 +22,7 @@
 
 .btn-muted{
 	background-color: #d1d1d1;
-	color: $gray-dark;
+	color: $white;
 }
 
 .btn-square {
@@ -40,6 +40,12 @@
 	padding: 0.5rem;
 	i{
 		width: 1.875rem;
+	}
+	&.btn-sm{
+		line-height: 1rem;	
+		i{
+			width: 1rem;
+		}		
 	}
 }
 
