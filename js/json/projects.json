@@ -12,7 +12,7 @@
             "description": "En uppgift som gick ut på att hämta data från öppna API-er genom AJAX. Appen hämtar data från last.fm och youtube. Del av svenska jazzbandets Oddjobs hemsida.",
             "tech": [ 
             	"JavaScript",
-            	"Responsivisitet",
+            	"Responsivitet",
             	"Sass",
             	"Restful APIs",
             	"Gulp"
@@ -33,7 +33,7 @@
             "description": "En uppgift vars syfte var att bygga en filmdatabas i JavaScript och använda designmönster. Datan hämtas från en JSON-fil med data från IMDb.",
             "tech": [ 
             	"JavaScript",
-            	"Responsivisitet",
+            	"Responsivitet",
             	"Sass",
             	"Gulp",
             	"Fetch"
@@ -55,7 +55,7 @@
             "tech": [ 
                 "HTML5",
                 "Sass",
-            	"Responsivisitet",
+            	"Responsivitet",
                 "JavaScript",
                 "Git",	
             	"Gulp"
@@ -113,7 +113,7 @@
             "description": "Portfoliosida till Wickholm formavd, en design- och formgivningsbyrå med studio på Varvsgatan vid Hornstull i Stockholm. Ett responsivt tema i WordPress byggdes utifrån deras design.",
             "tech": [ 
             	"Wordpress",
-            	"Responsivisitet",
+            	"Responsivitet",
             	"Less",
             	"JavaScript"
             ],
@@ -133,7 +133,7 @@
             "description": "Portfoliosida byggd i WordPress till Mattias Tegnér, en kompositör inriktad främst på musik till reklamfilmer. Designad av Frans Enmark. Hämtar in filmer från Vimeo med AJAX.",
             "tech": [ 
             	"Wordpress",
-            	"Responsivisitet",
+            	"Responsivitet",
             	"Less",
             	"JavaScript"
             ],
@@ -153,7 +153,7 @@
             "description": "Hemsida till Goran Kajfeš, en svensk jazzmusiker som spelar i band som Oddjob. Minimalsitisk sida med hans album, turnéplan och en blogg. Responsivt eget tema i WordPress.",
             "tech": [ 
             	"Wordpress",
-            	"Responsivisitet",
+            	"Responsivitet",
             	"Less",
             	"JavaScript"
             ],
@@ -173,7 +173,7 @@
             "description": "Hemsida för att presentera Johan Söderbergs mångsidiga verk inom reklam, film och musikvideos. En enkelt responsivt tema i WordPress.",
             "tech": [ 
             	"Wordpress",
-            	"Responsivisitet",
+            	"Responsivitet",
             	"Less",
             	"JavaScript"
             ],
